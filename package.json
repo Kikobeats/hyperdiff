@@ -1,0 +1,49 @@
+{
+  "name": "hyperdiff",
+  "description": "Find common, removed and added element between two arrays.",
+  "homepage": "https://github.com/Kikobeats/hyperdiff",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": {
+    "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
+    "url": "https://github.com/Kikobeats"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikobeats/hyperdiff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kikobeats/hyperdiff/issues"
+  },
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "latest",
+    "fastbench": "~1.0.1",
+    "git-dirty": "latest",
+    "mocha": "latest",
+    "nyc": "latest",
+    "should": "latest",
+    "simple-array-diff": "~1.1.0",
+    "standard": "latest",
+    "standard-markdown": "latest"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "standard-markdown && standard",
+    "pretest": "npm run lint",
+    "test": "nyc mocha"
+  },
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  }
+}
