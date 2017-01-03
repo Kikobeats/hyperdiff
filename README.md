@@ -23,17 +23,17 @@ Using flat arrays:
 ```js
 const diff = require('hyperdiff')
 
-var result = arrayDiff(
+var result = diff(
   [1, 2, 3, 4, 5, 6],
   [1, 2, 4, 5, 6, 0, 9, 10]
-);
+)
 
 console.log(result)
 
-// { 
-//   added: [ 0, 9, 10 ], 
-//   removed: [ 3 ], 
-//   common: [ 1, 2, 4, 5, 6 ] 
+// {
+//   added: [ 0, 9, 10 ],
+//   removed: [ 3 ],
+//   common: [ 1, 2, 4, 5, 6 ]
 // }
 ```
 
@@ -43,19 +43,19 @@ Using objects inside:
 const diff = require('hyperdiff')
 var result = diff(
   [
-    {id:1, name: 'a'},
-    {id:2, name: 'b'},
-    {id:3, name: 'c'},
-    {id:4, name: 'd'},
-    {id:5, name: 'e'}
+    {id: 1, name: 'a'},
+    {id: 2, name: 'b'},
+    {id: 3, name: 'c'},
+    {id: 4, name: 'd'},
+    {id: 5, name: 'e'}
   ],
   [
-    {id:1, name: 'a'},
-    {id:2, name: 'b'},
-    {id:7, name: 'e'}
+    {id: 1, name: 'a'},
+    {id: 2, name: 'b'},
+    {id: 7, name: 'e'}
   ],
   'id'
-);
+)
 
 console.log(result)
 // {
