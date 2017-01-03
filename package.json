@@ -24,6 +24,9 @@
     "Added",
     "Removed"
   ],
+  "files": [
+    "index.js"
+  ],
   "devDependencies": {
     "coveralls": "latest",
     "fastbench": "latest",
