@@ -41,9 +41,7 @@ function hyperdiff (orig, dist, id) {
 
 function get (item, id) {
   if (!id) return item
-  if (typeof id === 'string') return item[id]
-  if (typeof id === 'function') return id(item)
-  throw TypeError('Property selector should either be a property name or selector function.')
+  return typeof id !== 'function' ? item[id] : id(item)
 }
 
 module.exports = hyperdiff
