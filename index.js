@@ -1,25 +1,49 @@
 'use strict'
 
-const { difference, reduce, findIndex, pullAt } = require('lodash')
-const isPresent = (itemIndex) => itemIndex !== -1
+const FLAGS = {
+  REMOVED: '1',
+  COMMON: '0',
+  ADDED: '2'
+}
 
-function hyperdiff (orig, dist, fn) {
-  const results = reduce(dist, function (acc, item) {
-    const itemIndex = findIndex(orig, item, fn)
+function hyperdiff (orig, dist, id) {
+  const _deltaMap = {}
+  const _objHolder = {}
 
-    if (isPresent(itemIndex)) acc.common.push(item)
-    else acc.added.push(item)
-
-    pullAt(orig, itemIndex)
-
-    return acc
-  }, {
-    added: [],
-    common: []
+  orig.forEach(function (item) {
+    const key = get(item, id)
+    _objHolder[key] = item
+    _deltaMap[key] = FLAGS.REMOVED
   })
 
-  results.removed = difference(orig, results.common)
-  return results
+  dist.forEach(function (item) {
+    const key = get(item, id)
+    _objHolder[key] = item
+    const flag = _deltaMap[key]
+
+    if (flag === FLAGS.REMOVED) _deltaMap[key] = FLAGS.COMMON
+    else _deltaMap[key] = FLAGS.ADDED
+  })
+
+  const delta = { added: [], removed: [], common: [] }
+
+  Object.keys(_deltaMap).forEach(function (id) {
+    const value = _deltaMap[id]
+    let store
+    if (value === FLAGS.REMOVED) store = delta.removed
+    else if (value === FLAGS.ADDED) store = delta.added
+    else if (value === FLAGS.COMMON) store = delta.common
+    store.push(_objHolder[id])
+  })
+
+  return delta
+}
+
+function get (item, id) {
+  if (!id) return item
+  if (typeof id === 'string') return item[id]
+  if (typeof id === 'function') return id(item)
+  throw TypeError('Property selector should either be a property name or selector function.')
 }
 
 module.exports = hyperdiff

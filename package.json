@@ -16,16 +16,22 @@
   "bugs": {
     "url": "https://github.com/Kikobeats/hyperdiff/issues"
   },
-  "keywords": [],
-  "dependencies": {},
+  "keywords": [
+    "Array",
+    "Difference",
+    "Diff",
+    "Delta",
+    "Added",
+    "Removed"
+  ],
   "devDependencies": {
     "coveralls": "latest",
-    "fastbench": "~1.0.1",
+    "fastbench": "latest",
     "git-dirty": "latest",
     "mocha": "latest",
     "nyc": "latest",
     "should": "latest",
-    "simple-array-diff": "~1.1.0",
+    "simple-array-diff": "latest",
     "standard": "latest",
     "standard-markdown": "latest"
   },
