@@ -39,7 +39,7 @@
     "standard-markdown": "latest"
   },
   "engines": {
-    "node": ">= 6"
+    "node": ">= 4"
   },
   "scripts": {
     "clean": "rm -rf node_modules",
