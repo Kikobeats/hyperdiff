@@ -65,6 +65,16 @@ console.log(result)
 // }
 ```
 
+## Benchmark
+
+```bash
+❯ node bench.js
+simpleArrayDiff*1000: 143.742ms
+hyperDiff*1000: 80.234ms
+simpleArrayDiff*1000: 143.405ms
+hyperDiff*1000: 75.803ms
+```
+
 ## API
 
 ### hyperdiff(orig, dist, [id])
