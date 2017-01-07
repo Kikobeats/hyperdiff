@@ -46,6 +46,25 @@ describe('hyperdiff', function () {
   })
 
   describe('objects', function () {
+    it('same are not different', function () {
+      const array = [
+        {id: 1, name: 'a'},
+        {id: 2, name: 'b'},
+        {id: 3, name: 'c'}
+      ]
+
+      const result = diff(
+        array.slice(),
+        array.slice(),
+        'name'
+      )
+
+      assert(result)
+      assert.equal(result.added.length, 0)
+      assert.equal(result.removed.length, 0)
+      assert.equal(result.common.length, 3)
+    })
+
     it('should differentiate between object elements', function () {
       const result = diff(
         [
