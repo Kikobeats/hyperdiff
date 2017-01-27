@@ -8,7 +8,7 @@
 [![NPM Status](https://img.shields.io/npm/dm/hyperdiff.svg?style=flat-square)](https://www.npmjs.org/package/hyperdiff)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
 
-> Find common, removed and added element between two arrays.
+> Find common, removed and added element between two collections.
 
 ## Install
 
@@ -18,7 +18,7 @@ $ npm install hyperdiff --save
 
 ## Usage
 
-Using flat arrays:
+Using flat collections:
 
 ```js
 const diff = require('hyperdiff')
@@ -77,7 +77,7 @@ hyperDiff*1000: 75.803ms
 
 ## API
 
-### hyperdiff(orig, dist, [id])
+### hyperdiff(orig, dist, [ids])
 
 #### orig
 
@@ -93,12 +93,12 @@ Type: `array`
 
 Second array for be compared. Notes the results are modeled from the second array.
 
-#### id
+#### ids
 
 *Required*<br>
-Type: `string|function`
+Type: `array`
 
-In the case that you provide an `Array` of `Object`, you need to specify the `key` to be used as `id`.
+In the case that you provide an `Array` of `Object`'s, you need to specify the `key`'s to be used as `id`.
 
 ## License
 

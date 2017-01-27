@@ -2,7 +2,7 @@
 const _simpleArrayDiff = require('simple-array-diff')
 const { map, range, random } = require('lodash')
 const suite = require('fastbench')
-const _hyperDiff = require('.')
+const _hyperDiff = require('./lib')
 const _range = range(0, 1000)
 
 function generateRange (_range) {
@@ -13,7 +13,7 @@ const array1 = generateRange(_range)
 const array2 = generateRange(_range)
 
 function bench (fn) {
-  fn(array1, array2, 'id')
+  fn(array1, array2, ['id'])
 }
 
 const run = suite([

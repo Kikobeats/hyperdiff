@@ -54,5 +54,9 @@
       "describe",
       "it"
     ]
+  },
+  "dependencies": {
+    "lodash.difference": "~4.5.0",
+    "lodash.pullat": "~4.6.0"
   }
 }
