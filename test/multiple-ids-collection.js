@@ -30,4 +30,23 @@ describe('hyperdiff » multiple ids', function () {
     output.removed.length.should.be.equal(0)
     output.common.length.should.be.equal(1)
   })
+
+  it('complex case', function () {
+    const orig = [
+      {id: 1, foo: 'bar'},
+      {id: 1, foo: 'barz'},
+      {id: 1, foo: 'baaz'}
+    ]
+
+    const dist = [
+      {id: 1, foo: 'bar'},
+      {id: 1, foo: 'baarz'},
+      {id: 1, foo: 'bax'}
+    ]
+
+    const output = diff(orig, dist, ['id', 'foo'])
+    output.added.should.be.eql([{ id: 1, foo: 'baarz' }, { id: 1, foo: 'bax' }])
+    output.removed.should.be.eql([{ id: 1, foo: 'barz' }, { id: 1, foo: 'baaz' }])
+    output.common.should.be.eql([{ id: 1, foo: 'bar' }])
+  })
 })
