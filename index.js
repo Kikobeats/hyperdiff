@@ -1,10 +1,7 @@
 'use strict'
 
-const FLAGS = {
-  REMOVED: '1',
-  COMMON: '0',
-  ADDED: '2'
-}
+const FLAGS = { REMOVED: '1', COMMON: '0', ADDED: '2' }
+const _get = require('lodash.get')
 
 function hyperdiff (orig, dist, id) {
   const _deltaMap = {}
@@ -39,9 +36,13 @@ function hyperdiff (orig, dist, id) {
   return delta
 }
 
+function isFunction (value) {
+  return typeof value === 'function'
+}
+
 function get (item, id) {
   if (!id) return item
-  return typeof id !== 'function' ? item[id] : id(item)
+  return !isFunction(id) ? _get(item, id) : id(item)
 }
 
 module.exports = hyperdiff
