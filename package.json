@@ -2,7 +2,7 @@
   "name": "hyperdiff",
   "description": "Find common, removed and added element between two arrays.",
   "homepage": "https://github.com/Kikobeats/hyperdiff",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
@@ -17,13 +17,17 @@
     "url": "https://github.com/Kikobeats/hyperdiff/issues"
   },
   "keywords": [
-    "Array",
-    "Difference",
-    "Diff",
-    "Delta",
     "Added",
+    "Array",
+    "Delta",
+    "Diff",
+    "Difference",
     "Removed"
   ],
+  "dependencies": {
+    "lodash.difference": "~4.5.0",
+    "lodash.pullat": "~4.6.0"
+  },
   "devDependencies": {
     "coveralls": "latest",
     "fastbench": "latest",
@@ -54,9 +58,5 @@
       "describe",
       "it"
     ]
-  },
-  "dependencies": {
-    "lodash.difference": "~4.5.0",
-    "lodash.pullat": "~4.6.0"
   }
 }
