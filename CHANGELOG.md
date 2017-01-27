@@ -1,3 +1,10 @@
+<a name="2.0.1"></a>
+## 2.0.1 (2017-01-27)
+
+* Fix meta ([247bcae](https://github.com/kikobeats/hyperdiff/commit/247bcae))
+
+
+
 <a name="2.0.0"></a>
 # 2.0.0 (2017-01-27)
 
