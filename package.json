@@ -17,12 +17,15 @@
     "url": "https://github.com/Kikobeats/hyperdiff/issues"
   },
   "keywords": [
-    "Added",
-    "Array",
-    "Delta",
-    "Diff",
-    "Difference",
-    "Removed"
+    "added",
+    "array",
+    "delta",
+    "diff",
+    "difference",
+    "removed",
+    "compare",
+    "object",
+    "snapshot"
   ],
   "dependencies": {
     "lodash.difference": "~4.5.0",

@@ -100,6 +100,10 @@ Type: `array`
 
 In the case that you provide an `Array` of `Object`'s, you need to specify the `key`'s to be used as `id`.
 
+## Related
+
+* [redis-diff](https://github.com/Kikobeats/redis-diff) - Perform a diff comparison backed by redis.
+
 ## License
 
 MIT © [Kiko Beats](https://github.com/Kikobeats).
