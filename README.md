@@ -96,7 +96,7 @@ Second array for be compared. Notes the results are modeled from the second arra
 #### ids
 
 *Required*<br>
-Type: `array`
+Type: `string`|`array`
 
 In the case that you provide an `Array` of `Object`'s, you need to specify the `key`'s to be used as `id`.
 
