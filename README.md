@@ -18,7 +18,7 @@ $ npm install hyperdiff --save
 
 ## Usage
 
-Using flat collections:
+Using a flat `Array`:
 
 ```js
 const diff = require('hyperdiff')
@@ -37,7 +37,7 @@ console.log(result)
 // }
 ```
 
-Using objects inside:
+Using an `Array` of `Object`'s (in this case you need to provide the unique id):
 
 ```js
 const diff = require('hyperdiff')
@@ -64,6 +64,8 @@ console.log(result)
 //   common: [ { id: 1, name: 'a' }, { id: 2, name: 'b' } ]
 // }
 ```
+
+It's also support multiple properties as id or provide a `function`.
 
 ## Benchmark
 
@@ -96,7 +98,7 @@ Second array for be compared. Notes the results are modeled from the second arra
 #### ids
 
 *Required*<br>
-Type: `string`|`array`
+Type: `string`|`array`|`function`
 
 In the case that you provide an `Array` of `Object`'s, you need to specify the `key`'s to be used as `id`.
 
