@@ -1,6 +1,6 @@
 'use strict'
 
-require('should')
+const should = require('should')
 const diff = require('../lib')
 
 describe('hyperdiff » multiple ids', function () {
@@ -8,27 +8,30 @@ describe('hyperdiff » multiple ids', function () {
     const orig = [{id: 1, letter: 'a'}]
     const dist = [{id: 1, letter: 'a'}]
     const output = diff(orig, dist, ['id', 'letter'])
-    output.added.length.should.be.equal(0)
-    output.removed.length.should.be.equal(0)
-    output.common.length.should.be.equal(1)
+
+    should(output.added).be.eql([])
+    should(output.removed).be.eql([])
+    should(output.common).be.eql([{id: 1, letter: 'a'}])
   })
 
   it('removed', function () {
     const orig = [{id: 1, letter: 'a'}, {id: 1, letter: 'b'}]
     const dist = [{id: 1, letter: 'a'}]
     const output = diff(orig, dist, ['id', 'letter'])
-    output.added.length.should.be.equal(0)
-    output.removed.length.should.be.equal(1)
-    output.common.length.should.be.equal(1)
+
+    should(output.added).be.eql([])
+    should(output.removed).be.eql([{id: 1, letter: 'b'}])
+    should(output.common).be.eql([{id: 1, letter: 'a'}])
   })
 
   it('added', function () {
     const orig = [{id: 1, letter: 'a'}]
     const dist = [{id: 1, letter: 'a'}, {id: 1, letter: 'b'}]
     const output = diff(orig, dist, ['id', 'letter'])
-    output.added.length.should.be.equal(1)
-    output.removed.length.should.be.equal(0)
-    output.common.length.should.be.equal(1)
+
+    should(output.added).be.eql([{id: 1, letter: 'b'}])
+    should(output.removed).be.eql([])
+    should(output.common).be.eql([{id: 1, letter: 'a'}])
   })
 
   it('complex case', function () {
