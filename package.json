@@ -44,7 +44,7 @@
     "standard-markdown": "latest"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 6"
   },
   "files": [
     "lib"
