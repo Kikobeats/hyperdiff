@@ -2,7 +2,7 @@
   "name": "hyperdiff",
   "description": "Find common, removed and added element between two arrays.",
   "homepage": "https://github.com/Kikobeats/hyperdiff",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "lib",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
@@ -19,12 +19,12 @@
   "keywords": [
     "added",
     "array",
+    "compare",
     "delta",
     "diff",
     "difference",
-    "removed",
-    "compare",
     "object",
+    "removed",
     "snapshot"
   ],
   "dependencies": {

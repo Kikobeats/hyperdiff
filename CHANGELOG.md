@@ -1,3 +1,14 @@
+<a name="2.0.2"></a>
+## 2.0.2 (2017-02-15)
+
+* Drop node 4 support ([82d9ac8](https://github.com/kikobeats/hyperdiff/commit/82d9ac8))
+* Fix mutability ([24d64a1](https://github.com/kikobeats/hyperdiff/commit/24d64a1))
+* Meta tweaks ([64da138](https://github.com/kikobeats/hyperdiff/commit/64da138))
+* Update README.md ([5ce7408](https://github.com/kikobeats/hyperdiff/commit/5ce7408))
+* Update README.md ([fa684b5](https://github.com/kikobeats/hyperdiff/commit/fa684b5))
+
+
+
 <a name="2.0.1"></a>
 ## 2.0.1 (2017-01-27)
 
