@@ -1,3 +1,16 @@
+<a name="2.0.3"></a>
+## 2.0.3 (2017-08-29)
+
+* Add missing keyword ([5720e1a](https://github.com/kikobeats/hyperdiff/commit/5720e1a))
+* Update compositor.json ([3095290](https://github.com/kikobeats/hyperdiff/commit/3095290))
+* Update compositor.json ([3d9d276](https://github.com/kikobeats/hyperdiff/commit/3d9d276))
+* Update compositor.json ([760cb2e](https://github.com/kikobeats/hyperdiff/commit/760cb2e))
+* Update README.md ([b4514c9](https://github.com/kikobeats/hyperdiff/commit/b4514c9))
+* fix(package): update debug to version 3.0.0 ([99c397b](https://github.com/kikobeats/hyperdiff/commit/99c397b))
+* docs(readme): add Greenkeeper badge ([ec51ffd](https://github.com/kikobeats/hyperdiff/commit/ec51ffd))
+
+
+
 <a name="2.0.2"></a>
 ## 2.0.2 (2017-02-15)
 
