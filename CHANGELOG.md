@@ -1,3 +1,13 @@
+<a name="2.0.4"></a>
+## 2.0.4 (2017-12-01)
+
+* Update compositor.json ([330238b](https://github.com/kikobeats/hyperdiff/commit/330238b))
+* Update README.md ([7bcd8db](https://github.com/kikobeats/hyperdiff/commit/7bcd8db))
+* docs(readme): add Greenkeeper badge ([0b12b2c](https://github.com/kikobeats/hyperdiff/commit/0b12b2c))
+* fix(package): update debug to version 3.1.0 ([de5a00a](https://github.com/kikobeats/hyperdiff/commit/de5a00a))
+
+
+
 <a name="2.0.3"></a>
 ## 2.0.3 (2017-08-29)
 
