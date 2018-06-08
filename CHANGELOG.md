@@ -1,3 +1,12 @@
+<a name="2.0.5"></a>
+## 2.0.5 (2018-06-08)
+
+* Support string as id ([32b8006](https://github.com/kikobeats/hyperdiff/commit/32b8006)), closes [#8](https://github.com/kikobeats/hyperdiff/issues/8)
+* Update compositor.json via compositor.io ([3e50f07](https://github.com/kikobeats/hyperdiff/commit/3e50f07))
+* Update node version ([e2c3446](https://github.com/kikobeats/hyperdiff/commit/e2c3446))
+
+
+
 <a name="2.0.4"></a>
 ## 2.0.4 (2017-12-01)
 
