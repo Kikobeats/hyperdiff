@@ -3,11 +3,11 @@
 const should = require('should')
 const diff = require('../lib')
 
-describe('hyperdiff » numeric id', function () {
+describe('hyperdiff » string id', function () {
   it('common', function () {
     const orig = [{id: 1, letter: 'a', name: 'kiko'}]
     const dist = [{id: 1, letter: 'b', name: 'elena'}]
-    const output = diff(orig, dist, ['id'])
+    const output = diff(orig, dist, 'id')
 
     should(output.added).be.eql([])
     should(output.removed).be.eql([])
@@ -17,7 +17,7 @@ describe('hyperdiff » numeric id', function () {
   it('removed', function () {
     const orig = [{id: 1, letter: 'a', name: 'kiko'}]
     const dist = []
-    const output = diff(orig, dist, ['id'])
+    const output = diff(orig, dist, 'id')
 
     should(output.added).be.eql([])
     should(output.common).be.eql([])
@@ -27,7 +27,7 @@ describe('hyperdiff » numeric id', function () {
   it('added', function () {
     const orig = [{id: 1, letter: 'a', name: 'kiko'}]
     const dist = []
-    const output = diff(dist, orig, ['id'])
+    const output = diff(dist, orig, 'id')
 
     should(output.added).be.eql([{id: 1, letter: 'a', name: 'kiko'}])
     should(output.common).be.eql([])

@@ -3,7 +3,7 @@
 const should = require('should')
 const diff = require('../lib')
 
-describe('hyperdiff » multiple ids', function () {
+describe('hyperdiff » multiple numeric ids', function () {
   it('common', function () {
     const orig = [{id: 1, letter: 'a'}]
     const dist = [{id: 1, letter: 'a'}]
