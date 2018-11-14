@@ -29,7 +29,6 @@ var result = diff(
 )
 
 console.log(result)
-
 // {
 //   added: [ 0, 9, 10 ],
 //   removed: [ 3 ],
@@ -43,16 +42,16 @@ Using an `Array` of `Object`'s (in this case you need to provide the unique id):
 const diff = require('hyperdiff')
 var result = diff(
   [
-    {id: 1, name: 'a'},
-    {id: 2, name: 'b'},
-    {id: 3, name: 'c'},
-    {id: 4, name: 'd'},
-    {id: 5, name: 'e'}
+    { id: 1, name: 'a' },
+    { id: 2, name: 'b' },
+    { id: 3, name: 'c' },
+    { id: 4, name: 'd' },
+    { id: 5, name: 'e' }
   ],
   [
-    {id: 1, name: 'a'},
-    {id: 2, name: 'b'},
-    {id: 7, name: 'e'}
+    { id: 1, name: 'a' },
+    { id: 2, name: 'b' },
+    { id: 7, name: 'e' }
   ],
   'id'
 )
