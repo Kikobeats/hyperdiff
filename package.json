@@ -41,7 +41,7 @@
     "nyc": "latest",
     "should": "latest",
     "simple-array-diff": "latest",
-    "standard": "11",
+    "standard": "latest",
     "standard-markdown": "latest"
   },
   "engines": {
