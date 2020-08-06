@@ -1,3 +1,18 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 2.0.6 (2020-08-06)
+
+
+### Bug Fixes
+
+* **package:** update debug to version 3.0.0 ([99c397b](https://github.com/kikobeats/hyperdiff/commit/99c397ba0c1d85cc63d904b943b586d3b6ae9f3e))
+* **package:** update debug to version 3.1.0 ([de5a00a](https://github.com/kikobeats/hyperdiff/commit/de5a00ace7fdc6439b96eb3b6388c855ec3f183b))
+* **package:** update debug to version 3.2.1 ([22b87f4](https://github.com/kikobeats/hyperdiff/commit/22b87f4b7c5b6d80bd156bdc44e9b1bcee8c5628))
+* **package:** update debug to version 4.0.1 ([b44dc9b](https://github.com/kikobeats/hyperdiff/commit/b44dc9bdf4343696b7833632c9fb5efe62f7fb5d))
+* **package:** update debug to version 4.1.0 ([ba4a839](https://github.com/kikobeats/hyperdiff/commit/ba4a839821534ea25f4994939fba8bf7b67e91c1))
+
 <a name="2.0.5"></a>
 ## 2.0.5 (2018-06-08)
 
@@ -67,6 +82,3 @@
 * Fix linter ([3900c68](https://github.com/kikobeats/hyperdiff/commit/3900c68))
 * Improve implementation ([b366b1d](https://github.com/kikobeats/hyperdiff/commit/b366b1d))
 * Simplify get ([6ed157a](https://github.com/kikobeats/hyperdiff/commit/6ed157a))
-
-
-
