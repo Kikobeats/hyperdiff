@@ -6,7 +6,6 @@
 [![Dependency status](https://img.shields.io/david/Kikobeats/hyperdiff.svg?style=flat-square)](https://david-dm.org/Kikobeats/hyperdiff)
 [![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/hyperdiff.svg?style=flat-square)](https://david-dm.org/Kikobeats/hyperdiff#info=devDependencies)
 [![NPM Status](https://img.shields.io/npm/dm/hyperdiff.svg?style=flat-square)](https://www.npmjs.org/package/hyperdiff)
-[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
 
 > Find common, removed and added element between two collections.
 
