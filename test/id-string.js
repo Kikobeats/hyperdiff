@@ -1,7 +1,7 @@
 'use strict'
 
 const should = require('should')
-const diff = require('../lib')
+const diff = require('..')
 
 describe('hyperdiff » string id', function () {
   it('common', function () {
