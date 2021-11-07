@@ -37,18 +37,16 @@
     "@commitlint/config-conventional": "latest",
     "ci-publish": "latest",
     "conventional-github-releaser": "latest",
-    "coveralls": "latest",
     "fastbench": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
-    "git-dirty": "latest",
-    "husky": "latest",
     "lint-staged": "latest",
     "mocha": "latest",
     "npm-check-updates": "latest",
     "nyc": "latest",
+    "prettier-standard": "latest",
     "should": "latest",
-    "simple-array-diff": "latest",
+    "simple-git-hooks": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest"
@@ -64,7 +62,7 @@
     "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown && standard",
-    "postrelease": "npm run release:tags && npm run release:github && ci-publish",
+    "postrelease": "npm run release:tags && npm run release:github && (ci-publish || npm publish --access=public)",
     "prerelease": "npm run update:check && npm run contributors",
     "pretest": "npm run lint",
     "release": "standard-version -a",
@@ -89,7 +87,17 @@
   "lint-staged": {
     "package.json": [
       "finepack"
+    ],
+    "*.js,!*.min.js,": [
+      "prettier-standard"
+    ],
+    "*.md": [
+      "standard-markdown"
     ]
+  },
+  "simple-git-hooks": {
+    "commit-msg": "npx commitlint --edit",
+    "pre-commit": "npx lint-staged"
   },
   "standard": {
     "globals": [
