@@ -1,10 +1,7 @@
 # hyperdiff
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/hyperdiff.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/com/Kikobeats/hyperdiff/master.svg?style=flat-square)](https://travis-ci.com/github/Kikobeats/hyperdiff)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/hyperdiff.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/hyperdiff)
-[![Dependency status](https://img.shields.io/david/Kikobeats/hyperdiff.svg?style=flat-square)](https://david-dm.org/Kikobeats/hyperdiff)
-[![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/hyperdiff.svg?style=flat-square)](https://david-dm.org/Kikobeats/hyperdiff#info=devDependencies)
 [![NPM Status](https://img.shields.io/npm/dm/hyperdiff.svg?style=flat-square)](https://www.npmjs.org/package/hyperdiff)
 
 > Find common, removed and added element between two collections.
