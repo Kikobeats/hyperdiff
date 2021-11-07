@@ -1,7 +1,7 @@
 'use strict'
 
 const { pullAt, cloneDeep } = require('lodash')
-const debug = require('debug')('hyperdiff')
+const debug = require('debug-logfmt')('hyperdiff')
 
 const isPresent = itemIndex => itemIndex !== -1
 
