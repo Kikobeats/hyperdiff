@@ -19,7 +19,7 @@ Using a flat `Array`:
 ```js
 const diff = require('hyperdiff')
 
-var result = diff(
+const result = diff(
   [1, 2, 3, 4, 5, 6],
   [1, 2, 4, 5, 6, 0, 9, 10]
 )
@@ -36,7 +36,7 @@ Using an `Array` of `Object`'s (in this case you need to provide the unique id):
 
 ```js
 const diff = require('hyperdiff')
-var result = diff(
+const result = diff(
   [
     { id: 1, name: 'a' },
     { id: 2, name: 'b' },
