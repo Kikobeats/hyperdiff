@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 2.0.11 (2022-02-25)
+
+
+### Bug Fixes
+
+* debug logs ([f5d26c2](https://github.com/kikobeats/hyperdiff/commit/f5d26c2554a21c3418b14cbb6b3b5b5e6c97ad6f))
+
 ### 2.0.10 (2021-11-07)
 
 ### 2.0.9 (2021-11-07)
