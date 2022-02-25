@@ -36,19 +36,27 @@ function hyperdiff (orig, dist, props) {
   const { first, second } = determinateCollections(orig, dist)
   const findIndex = determinateFindIndex(ids, props)
 
-  debug('preconditions first=%j second=%j findIndex=%s', first, second, findIndex.name)
+  debug(
+    `preconditions first=${JSON.stringify(first)} second=${JSON.stringify(second)} findIndex=${
+      findIndex.name
+    }`
+  )
 
   const results = first.reduce(function (acc, item, index) {
     const itemIndex = findIndex(second, item, ids)
     const destination = isPresent(itemIndex) ? 'common' : 'removed'
     acc[destination].push(item)
     pullAt(second, itemIndex)
-    debug('index=%s value=%s collection=%s', index, item, destination)
+    debug(`index=${index} value=${JSON.stringify(item)} collection=${destination}`)
     return acc
   }, GET_INITIAL_STATE())
 
   results.added = second
-  debug('added=%j removed=%j common%j', results.added, results.removed, results.common)
+  debug(
+    `added=${JSON.stringify(results.added)} removed=${JSON.stringify(
+      results.removed
+    )} common=${JSON.stringify(results.common)}`
+  )
   return results
 }
 
