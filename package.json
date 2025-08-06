@@ -29,7 +29,7 @@
     "snapshot"
   ],
   "dependencies": {
-    "debug-logfmt": "~1.2.0",
+    "debug-logfmt": "~1.4.0",
     "lodash": "~4.17.21"
   },
   "devDependencies": {
